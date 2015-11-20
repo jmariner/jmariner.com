@@ -1,0 +1,9 @@
+mardown: kramdown
+kramdown:
+    input: GFM
+port: 1337
+sass:
+    sass_dir: assets/styles
+    no-cache:
+    style: nested
+exclude: ['/ignore']
