@@ -5,7 +5,7 @@ port: 8080
 sass:
     sass_dir: assets/styles
     no-cache:
-    style: nested
+    style: compressed
 exclude: ['/ignore']
 stylesheet_root: /assets/styles/
 main_stylesheet: style.css

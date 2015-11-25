@@ -1,13 +1,15 @@
+@mixin overlayColor($r, $g, $b, $a) {
+	-webkit-box-shadow: inset 0 1000px 0 rgba($r, $g, $b, $a);
+	-moz-box-shadow: inset 0 1000px 0 rgba($r, $g, $b, $a);
+	box-shadow: inset 0 1000px 0 rgba($r, $g, $b, $a);
+}
+
 @mixin darken($ratio: 0.5) {
-	-webkit-box-shadow: inset 0 1000px 0 rgba(0, 0, 0, $ratio);
-	-moz-box-shadow: inset 0 1000px 0 rgba(0, 0, 0, $ratio);
-	box-shadow: inset 0 1000px 0 rgba(0, 0, 0, $ratio);
+	@include overlayColor(0,0,0,$ratio);
 }
 
 @mixin lighten($ratio: 0.5) {
-	-webkit-box-shadow: inset 0 1000px 0 rgba(255, 255, 255, $ratio);
-	-moz-box-shadow: inset 0 1000px 0 rgba(255, 255, 255, $ratio);
-	box-shadow: inset 0 1000px 0 rgba(255, 255, 255, $ratio);
+	@include overlayColor(255,255,255,$ratio);
 }
 
 @mixin hidden($justInvisible: false) {

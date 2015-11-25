@@ -6,14 +6,17 @@
 		<title>{{ page.title }}</title>
 
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700,900">
-		<link rel="stylesheet" href="{{ site.stylesheet_root }}{{ site.main_stylesheet }}">
-
-		{% for sheet in page.stylesheets %}
-			<link rel="stylesheet" href="{{ site.stylesheet_root }}{{ sheet | append:'.css'}}">
-		{% endfor %}
-
+		{% capture scss %}
+			{% include style.scss %}
+			{% for sheet in page.stylesheets %}
+				{% include {{ sheet | append:'.scss' }} %}
+			{% endfor %}
+		{% endcapture %}
+		<style>
+			{{ scss | scssify }}
+		</style>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+		<script src="/assets/scripts/style.js"></script>
 	</head>
 	<body data-location="{{ page.location }}">
 		{{ content }}
