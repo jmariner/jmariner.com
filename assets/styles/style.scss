@@ -1,8 +1,23 @@
 ---
 ---
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Flexbox classes */
+@import "flex";
+
+/* Scrollbar customization */
+@import "scroll";
+
+/* Common Utilities */
+@import "utils";
+@import "mixins";
+
 body {
-	div {
-		color: red;
-	}
+	width: 100vw;
+	font: 12px 'Roboto', sans-serif;
 }
