@@ -1,6 +1,15 @@
 ---
 layout: main
-title: In the Mind of Justin Mariner
+title: Home - jmariner.com
 location: home
+stylesheets: home
 ---
-<h1>Hello! I'm Justin Mariner</h1>
+<header>
+	<div class="title">jmariner.com</div>
+</header>
+<main>
+	<div class="box large"></div>
+	{% for i in (1..12) %}
+	<div class="box small"></div>
+	{% endfor %}
+</main>
