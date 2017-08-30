@@ -2,7 +2,7 @@ mardown: kramdown
 kramdown:
     input: GFM
 port: 8080
-exclude: ['/ignore']
+exclude: ['/ignore', 'jmariner.com.sublime-*']
 
 name: jmariner.com
 bootswatch: paper
