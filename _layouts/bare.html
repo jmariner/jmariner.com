@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% if page.title %}
+		<title>{{ page.title }} - {{ site.name }}</title>
+		{% else %}
+		<title>{{ site.name }}</title>
+		{% endif %}
+
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/{{ site.bootswatch }}/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="/css/flex.css">
+		<link rel="stylesheet" href="/css/main.css">
+
+		{% for cssFile in page.css %}
+		<link rel="stylesheet" href="/css/{{ cssFile }}.css">
+		{% endfor %}
+	</head>
+	<body data-location="{{ page.location }}">
+		{{ content }}
+
+		<script src="js/bootswatchlet.js"></script>
+		<!-- <script src="js/script.js"></script> -->
+	</body>
+</html>

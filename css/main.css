@@ -1,0 +1,33 @@
+.panel .panel-title {
+	text-align: center;
+	margin: 8px 0;
+}
+
+.panel .panel-title.small {
+	font-size: 24px;
+}
+
+.panel .panel-title.medium {
+	font-size: 32px;
+}
+
+.panel .panel-title.large {
+	font-size: 52px;
+}
+
+.item-desc {
+	margin-bottom: 16px;
+	font-size: 16px;
+}
+
+.item-desc > p {
+	text-align: justify;
+}
+
+.item-image {
+	margin-bottom: 16px;
+}
+
+.item-image img {
+	padding: 8px;
+}

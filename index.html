@@ -1,42 +1,60 @@
 ---
-layout: plain
-title: Home - jmariner.com
+layout: bare
+title: Home
 location: home
 ---
-<main>
-	<div class="box large">
-		<h1>Hello! I'm Justin Mariner</h1>
-		<h2>and this is my website</h2>
-		<p>
-			Here, I will be hosting projects -- both complete projects and projects in development -- experimenting with various website hosting capabilities, and possibly even starting a blog.
-		</p>
-		<p>
-			I have no idea where I'm going to be taking this website, but I'm just going to have fun with it and you'll see what happens eventually.
-		</p>
+<main class="container-fluid">
+	<div class="jumbotron text-center">
+		<h1>Hello!</h1>
+		<h3>I am Justin Mariner and I make things</h3>
 	</div>
-	<div class="box small">
-		<h1>MathSlash</h1>
-		<h2>My current WIP game</h2>
-		<a href="http://mathslash.jmariner.com/">http://mathslash.jmariner.com/</a>
-	</div>
-	<div class="box small">
-		<h1>Projects</h1>
-		<h2>Other miscellaneous projects I've made</h2>
-		<a href="http://projects.jmariner.com/">http://projects.jmariner.com/</a>
-	</div>
-	<div class="box small">
-		<h1>English Renaissance</h1>
-		<h2>An example done in my English class</h2>
-		<a href="http://english.jmariner.com/renaissance/">http://english.jmariner.com/renaissance/</a>
-	</div>
-	<div class="box small">
-		<h1>English Portfolio</h1>
-		<h2>My English class senior portfolio</h2>
-		<a href="http://english.jmariner.com/portfolio/">http://english.jmariner.com/portfolio/</a>
-	</div>
-	<div class="box small">
-		<h1>Code Sources</h1>
-		<h2>Source code for most things on this website</h2>
-		<a href="http://git.jmariner.com/">http://git.jmariner.com/</a>
+
+	<div class="row">
+
+		<div class="col-xs-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center medium">
+						Projects
+					</h2>
+				</div>
+			</div>
+		</div>
+
+		{% assign items = site.data.items | sort:"pos" %}
+		{% for item in items %}
+		<div class="col-md-6 col-xs-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center small">
+						{{ item.title }}
+					</h2>
+				</div>
+				<div class="panel-body">
+					{% if item.image %}
+					<div class="item-image text-center">
+						<img
+							src="/img/{{ item.image }}"
+							alt="{{ item.title }}"
+							{% if item.imageBg %}style="background-color: {{ item.imageBg }}"{% endif %}
+							>
+					</div>
+					{% endif %}
+					<div class="item-desc">{{ item.desc | markdownify }}</div>
+					<div class="flex-around">
+						<a class="btn btn-info" href="{{ item.srcLink }}" target="_blank" role="button">
+							View the code&nbsp;
+							{% fa github %}
+						</a>
+						<a class="btn btn-success" href="{{ item.link }}" target="_blank" role="button">
+							Check it out&nbsp;
+							{% fa play %}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+
 	</div>
 </main>

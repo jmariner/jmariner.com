@@ -3,3 +3,6 @@ kramdown:
     input: GFM
 port: 8080
 exclude: ['/ignore']
+
+name: jmariner.com
+bootswatch: paper
