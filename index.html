@@ -40,13 +40,13 @@ location: home
 							>
 					</div>
 					{% endif %}
-					<div class="item-desc">{{ item.desc | markdownify }}</div>
+					<div class="item-desc links-newtab">{{ item.desc | markdownify }}</div>
 					<div class="flex-around">
 						<a class="btn btn-info" href="{{ item.srcLink }}" target="_blank" role="button">
 							View the code&nbsp;
 							{% fa github %}
 						</a>
-						<a class="btn btn-success" href="{{ item.link }}" target="_blank" role="button">
+						<a class="btn btn-success" href="{{ item.link }}" role="button">
 							Check it out&nbsp;
 							{% fa play %}
 						</a>
