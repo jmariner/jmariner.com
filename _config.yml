@@ -6,3 +6,4 @@ exclude: ['/ignore', 'jmariner.com.sublime-*']
 
 name: jmariner.com
 bootswatch: paper
+site_dir: ~/html/root
