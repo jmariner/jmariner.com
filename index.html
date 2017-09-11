@@ -32,19 +32,26 @@ location: home
 				</div>
 				<div class="panel-body">
 					{% if item.image %}
+					{% assign img=item.image %}
 					<div class="item-image text-center">
 						<img
 							src="/img/{{ item.image.file }}"
 							alt="{{ item.title }}"
-							{% if item.image.shadow %}class="{{ item.image.shadow }}-shadow"{% endif %}
-							{% if item.image.bg %}style="background-color: {{ item.image.bg }}"{% endif %}
-							>
+							{% if img.shadow %}class="{{img.shadow }}-shadow"{% endif %}
+							style="
+								{%- if img.bg %}background-color: {{ img.bg }};{% endif %}
+								{%- if img.padding %}padding: {{ img.padding }};{% endif -%}
+							">
 					</div>
 					{% endif %}
-					<div class="item-desc links-newtab">{{ item.desc | markdownify }}</div>
+					<div class="item-desc links-newtab">
+						{{ item.desc | markdownify }}
+					</div>
 					<div class="flex-around">
-						<a class="btn btn-info" href="{{ item.srcLink }}" target="_blank" role="button">
-							View the code&nbsp;
+						<a class="btn btn-info{% unless item.srcLink %} disabled{% endunless %}"
+							{% if item.srcLink %}href="{{ item.srcLink }}"{% endif %}
+							target="_blank" role="button">
+							{% if item.srcLink %}View the code{% else %}Code coming soon{% endif %}&nbsp;
 							{% fa github %}
 						</a>
 						<a class="btn btn-success" href="{{ item.link }}" role="button">

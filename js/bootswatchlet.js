@@ -4,5 +4,6 @@ function bootswatchlet() {
 }
 
 $(document).keydown(function(e) {
-	if (e.keyCode == 192) bootswatchlet();
+	if (e.keyCode == 192) // tilde key
+		bootswatchlet();
 })

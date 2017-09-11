@@ -1,6 +1,7 @@
 port: 8080
 exclude: ['/ignore', 'jmariner.com.sublime-*']
 
+plugins: [jekyll-tidy]
 mardown: kramdown
 kramdown:
     input: GFM

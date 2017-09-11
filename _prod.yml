@@ -2,3 +2,5 @@ environment: production
 destination: ~/html/root
 sass:
   style: compressed
+jekyll_tidy:
+  compress_html: true
