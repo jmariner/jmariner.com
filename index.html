@@ -34,9 +34,10 @@ location: home
 					{% if item.image %}
 					<div class="item-image text-center">
 						<img
-							src="/img/{{ item.image }}"
+							src="/img/{{ item.image.file }}"
 							alt="{{ item.title }}"
-							{% if item.imageBg %}style="background-color: {{ item.imageBg }}"{% endif %}
+							{% if item.image.shadow %}class="{{ item.image.shadow }}-shadow"{% endif %}
+							{% if item.image.bg %}style="background-color: {{ item.image.bg }}"{% endif %}
 							>
 					</div>
 					{% endif %}

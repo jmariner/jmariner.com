@@ -16,11 +16,11 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="/css/flex.css">
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/styles/flex.css">
+		<link rel="stylesheet" href="/styles/main.css">
 
 		{% for cssFile in page.css %}
-		<link rel="stylesheet" href="/css/{{ cssFile }}.css">
+		<link rel="stylesheet" href="/styles/{{ cssFile }}.css">
 		{% endfor %}
 	</head>
 	<body data-location="{{ page.location }}">

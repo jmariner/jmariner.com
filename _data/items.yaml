@@ -2,20 +2,25 @@
   pos: 2
   link: http://mathslash.jmariner.com
   srcLink: https://github.com/jmariner/MathSlash
-  image: mathslash.png
+  image:
+    file: mathslash.png
+    shadow: drop
   desc: MathSlash is a web-based video game that I created in my senior year of high school. In it, you are a knight that tries to fight away enemies by quickly completing certain mathematical tasks. A friend handled the art and story, and I wrote all of the code from scratch. In this, I used [SCSS](http://sass-lang.com/) and [Babel](https://babeljs.io/) for the CSS and JavaScript portions, [jQuery](https://jquery.com/) for most HTML manipulation, and [MathJax](https://www.mathjax.org/) for handling of formatting fractions and exponents. I also had to create a dynamic CSS system that allows the animation keyframes for the sprites to be generated through JS. Looking back, there is a ton of room for improvement now that I've become more experienced.
 
 - title: Intelligent Living
   pos: 1
   link: http://il.jmariner.com
   srcLink: https://github.com/jmariner/intelligent_living
-  image: intelligent_living.png
-  imageBg: "#00bc8c"
+  image:
+    file: intelligent_living.png
+    bg: "#00bc8c"
+    shadow: box
   desc: Intelligent Living is a Case Study assignment for my first JavaScript course in college. I went into this already being very fluent in JavaScript, so instead, I put focus on practicing use of [Bootstrap](http://getbootstrap.com/), as well as working on UX and design. The site is built with the [Jekyll](http://jekyllrb.com/) HTML pre-processor, which removes the need to copy-and-paste HTML accross the site. Jekyll also allowed me to move all of the data to JSON files, and have HTML generated accordingly.
 
 - title: High School English
   pos: 3
   link: http://english.jmariner.com
-  image: english.jpg
+  image:
+    file: english.jpg
   srcLink: https://github.com/jmariner/jmcom-english
   desc: This is two simple sites containing work from my Senior high school English class. One site is based on the renaissance and was made solely as practice for creating the second site using the same layout. The second site, which is the main one, contains my English portfolio from all throughout high school. In it, I created a embedded document viewer that used an online Word document to HTML converter called [Zamzar](http://www.zamzar.com/convert/docx-to-html). This site also used [Jekyll](http://jekyllrb.com) and was the first time I had used it. I even learned a bit of Ruby so that I could understand Jekyll plugins. Also note that at this point in my career, I had not even thought about good webpage design standards, so the color schemes and layouts aren't the greatest.
