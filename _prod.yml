@@ -1,0 +1,4 @@
+environment: production
+destination: ~/html/root
+sass:
+  style: compressed

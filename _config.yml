@@ -1,9 +1,15 @@
-mardown: kramdown
-kramdown:
-    input: GFM
 port: 8080
 exclude: ['/ignore', 'jmariner.com.sublime-*']
 
+mardown: kramdown
+kramdown:
+    input: GFM
+sass:
+  sass_dir: _scss
+  style: expanded
+
+environment: development
+
 name: jmariner.com
 bootswatch: paper
-site_dir: ~/html/root
+# site_dir: ~/html/root
