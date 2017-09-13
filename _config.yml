@@ -13,4 +13,5 @@ environment: development
 
 name: jmariner.com
 bootswatch: paper
+md_footer: footer.md
 # site_dir: ~/html/root

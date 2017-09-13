@@ -9,21 +9,18 @@ location: home
 		<h3>I am Justin Mariner and I make things</h3>
 	</div>
 
-	<div class="row">
-
-		<div class="col-xs-12">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h2 class="panel-title text-center medium">
-						Projects
-					</h2>
-				</div>
-			</div>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h2 class="panel-title text-center medium">
+				Projects
+			</h2>
 		</div>
+	</div>
 
-		{% assign items = site.data.items | sort:"pos" %}
+	<div class="row">
+		{% assign items = site.data.items | sort:"pos","last" %}
 		{% for item in items %}
-		<div class="col-md-6 col-xs-12">
+		<div class="col-xs-12">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h2 class="panel-title text-center small">
