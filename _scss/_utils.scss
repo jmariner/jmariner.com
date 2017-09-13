@@ -1,12 +1,21 @@
 @mixin dropShadow($xOffset, $yOffset, $blur, $color:black, $alpha:0.5) {
 	$color: rgba($color, $alpha);
 	$ieColor: ie-hex-str($color);
-	$ieFilter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=#{$xOffset}, OffY=#{$yOffset}, Color='#{$ieColor}')";
+	$ieFilter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=#{$xOffset}, OffY=#{$yOffset}, Color='#000')";
+	$webkit: drop-shadow(#{$xOffset}px #{$yOffset}px #{$blur}px $color);
 
-    filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='#{$xOffset}' dy='#{$yOffset}' result='offsetblur'/><feFlood flood-color='#{$color}'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
-    -webkit-filter: drop-shadow(#{$xOffset}px #{$yOffset}px #{$blur}px $color);
+	// IE
     -ms-filter: "#{$ieFilter}";
     filter: "#{$ieFilter}";
+
+    // Firefox
+    filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='#{$xOffset}' dy='#{$yOffset}' result='offsetblur'/><feFlood flood-color='#{$color}'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+
+    // modern
+    filter: $webkit;
+
+    // webkit
+    -webkit-filter: $webkit;
 }
 
 @mixin boxShadow($xOffset, $yOffset, $blur, $color:black, $alpha:0.5) {

@@ -21,14 +21,15 @@
 - title: High School English
   pos: 3
   link: http://english.jmariner.com
+  srcLink: https://github.com/jmariner/jmcom-english
   image:
     file: english.jpg
-  srcLink: https://github.com/jmariner/jmcom-english
   desc: This is two simple sites containing work from my Senior high school English class. One site is based on the renaissance and was made solely as practice for creating the second site using the same layout. The second site, which is the main one, contains my English portfolio from all throughout high school. In it, I created a embedded document viewer that used an online Word document to HTML converter called [Zamzar](http://www.zamzar.com/convert/docx-to-html). This site also used [Jekyll](http://jekyllrb.com) and was the first time I had used it. I even learned a bit of Ruby so that I could understand Jekyll plugins. Also note that at this point in my career, I had not even thought about good webpage design standards, so the color schemes and layouts aren't the greatest.
 
 - title: Topple Chess
   pos: 4
   link: http://projects.jmariner.com/chess
+  srcLink: https://github.com/jmariner/ToppleChess
   image:
     file: topple_chess.png
     shadow: box
