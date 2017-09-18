@@ -10,15 +10,15 @@
 		<title>{{ site.name }}</title>
 		{% endif %}
 
-		<link rel="shortcut icon" href="icon.png?v=3" type="image/x-icon">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/{{ site.bootswatch }}/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="/styles/bootstrap-extras.css">
-		<link rel="stylesheet" href="/styles/flex.css">
-		<link rel="stylesheet" href="/styles/main.css">
+		<link rel="shortcut icon" href="{% ts /icon.png %}" type="image/x-icon">
+		<link rel="stylesheet" href="{% ts /styles/bootstrap-extras.css %}">
+		<link rel="stylesheet" href="{% ts /styles/flex.css %}">
+		<link rel="stylesheet" href="{% ts /styles/main.css %}">
 
 		{% for cssFile in page.css %}
 		<link rel="stylesheet" href="/styles/{{ cssFile }}.css">
@@ -27,7 +27,7 @@
 	<body data-location="{{ page.location }}">
 		{{ content }}
 
-		<script src="js/bootswatchlet.js"></script>
-		<script src="js/script.js"></script>
+		<script src="{% ts /js/bootswatchlet.js %}"></script>
+		<script src="{% ts /js/script.js %}"></script>
 	</body>
 </html>
