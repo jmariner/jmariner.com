@@ -1,0 +1,15 @@
+<footer class="container-fluid">
+	<div class="col-md-8 text-md-left text-xs-center">
+		{% capture md -%}
+		&copy; Justin Mariner 2017.
+		Built using [Jekyll], [Bootstrap] and the [Paper] theme.
+		{% endcapture %}
+		{{ md | markdownify }}
+	</div>
+	<div class="social-icons col-md-4 text-md-right text-xs-center">
+		<a href="https://github.com/jmariner" target="new">{% fa github-square Github %}</a>
+		<a href="https://www.linkedin.com/in/jmariner/" target="new">{% fa linkedin-square LinkedIn %}
+		<a href="https://twitter.com/jmariner53" target="new">{% fa twitter-square Twitter %}</a>
+		<a href="mailto:me@jmariner.com" target="new">{% fa envelope Contact me %}</a>
+	</div>
+</footer>

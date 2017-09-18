@@ -21,7 +21,7 @@ location: home
 		{% assign items = site.data.items | sort:"pos","last" %}
 		{% for item in items %}
 		<div class="col-xs-12">
-			<div class="panel panel-primary">
+			<div class="panel panel-primary item-panel">
 				<div class="panel-heading">
 					<h2 class="panel-title text-center small">
 						{{ item.title }}
@@ -31,14 +31,16 @@ location: home
 					{% if item.image %}
 					{% assign img=item.image %}
 					<div class="item-image text-center">
-						<img
-							src="/img/{{ item.image.file }}"
-							alt="{{ item.title }}"
-							{% if img.shadow %}class="{{img.shadow }}-shadow"{% endif %}
-							style="
-								{%- if img.bg %}background-color: {{ img.bg }};{% endif %}
-								{%- if img.padding %}padding: {{ img.padding }};{% endif -%}
-							">
+						<a href="{{ item.link }}">
+							<img
+								src="/img/{{ item.image.file }}"
+								alt="{{ item.title }}"
+								{% if img.shadow %}class="{{img.shadow }}-shadow"{% endif %}
+								style="
+									{%- if img.bg %}background-color: {{ img.bg }};{% endif %}
+									{%- if img.padding %}padding: {{ img.padding }};{% endif -%}
+								">
+						</a>
 					</div>
 					{% endif %}
 					<div class="item-desc links-newtab">
@@ -63,3 +65,4 @@ location: home
 
 	</div>
 </main>
+{% include footer.html %}

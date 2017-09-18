@@ -379,7 +379,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1725,
+				"buffer_size": 1814,
 				"line_ending": "Windows"
 			}
 		},
@@ -387,15 +387,7 @@
 			"file": "styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 559,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_plugins/markdownify-footer.rb",
-			"settings":
-			{
-				"buffer_size": 955,
+				"buffer_size": 788,
 				"line_ending": "Windows"
 			}
 		},
@@ -411,16 +403,32 @@
 			"file": "_includes/footer.md",
 			"settings":
 			{
-				"buffer_size": 346,
+				"buffer_size": 519,
 				"line_ending": "Windows",
 				"name": "This is a test"
 			}
 		},
 		{
-			"file": "_data/items.yaml",
+			"file": "_includes/footer.html",
 			"settings":
 			{
-				"buffer_size": 3700,
+				"buffer_size": 786,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_plugins/font-awesome.rb",
+			"settings":
+			{
+				"buffer_size": 440,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/script.js",
+			"settings":
+			{
+				"buffer_size": 122,
 				"line_ending": "Windows"
 			}
 		}
@@ -524,12 +532,13 @@
 		"/E/Documents/2 Projects/jmariner.com/_layouts",
 		"/E/Documents/2 Projects/jmariner.com/_plugins",
 		"/E/Documents/2 Projects/jmariner.com/_scss",
-		"/E/Documents/2 Projects/jmariner.com/_site",
 		"/E/Documents/2 Projects/jmariner.com/js",
 		"/E/Documents/2 Projects/jmariner.com/styles"
 	],
 	"file_history":
 	[
+		"/E/Documents/2 Projects/jmariner.com/_data/items.yaml",
+		"/E/Documents/2 Projects/jmariner.com/_plugins/markdownify-footer.rb",
 		"/E/Documents/2 Projects/topple_chess/index.html",
 		"/E/Documents/2 Projects/jmariner.com/_site/index.html",
 		"/E/Documents/2 Projects/jmariner.com/.gitignore",
@@ -655,9 +664,7 @@
 		"/C/Users/justi/Documents/Projects/code-golf/is-it-up/run.js",
 		"/C/Users/justi/Documents/Projects/code-golf/submitted/wardialing/script.js",
 		"/C/Users/justi/AppData/Roaming/BetterDiscord/themes/ClearVision_Ruby.theme.css",
-		"/C/Users/justi/AppData/Roaming/BetterDiscord/themes/ClearVision_Amethyst.theme.css",
-		"/C/Users/justi/AppData/Roaming/BetterDiscord/custom.css",
-		"/C/Users/justi/Documents/Projects/code-golf/efficient-maze/script.js"
+		"/C/Users/justi/AppData/Roaming/BetterDiscord/themes/ClearVision_Amethyst.theme.css"
 	],
 	"find":
 	{
@@ -974,7 +981,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -983,15 +990,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1725,
+						"buffer_size": 1814,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								409,
-								409
+								516,
+								516
 							]
 						],
 						"settings":
@@ -1000,10 +1007,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 198.0,
+						"translation.y": 165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1012,15 +1019,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 559,
+						"buffer_size": 788,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								265,
-								265
+								560,
+								560
 							]
 						],
 						"settings":
@@ -1029,43 +1036,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 396.0,
+						"translation.y": 589.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "_plugins/markdownify-footer.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 955,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								896,
-								896
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "_config.yml",
 					"semi_transient": false,
 					"settings":
@@ -1089,24 +1067,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "_includes/footer.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 346,
+						"buffer_size": 519,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								346,
-								346
+								519,
+								519
 							]
 						],
 						"settings":
@@ -1122,34 +1100,91 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "_data/items.yaml",
+					"buffer": 4,
+					"file": "_includes/footer.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3700,
+						"buffer_size": 786,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3286,
-								3286
+								64,
+								64
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 660.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_plugins/font-awesome.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1214,7 +1249,7 @@
 		[
 			[
 				"",
-				"E:\\Documents\\main.sublime-project"
+				"E:\\Documents\\1 School\\CIS213 JavaScript\\Case Study\\case_study.sublime-project"
 			]
 		],
 		"width": 380.0

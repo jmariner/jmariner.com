@@ -3,11 +3,15 @@ module Jekyll
 
     def initialize(tag_name, name, tokens)
       super
-      @name = name.strip
+      @name, @tooltip = name.strip.split(/\s+/, 2)
     end
 
     def render(context)
-      "<i class=\"fa fa-#{@name}\"></i>"
+      if @tooltip
+        "<i class=\"fa fa-#{@name}\" data-toggle=\"tooltip\" title=\"#{@tooltip}\"></i>"
+      else
+        "<i class=\"fa fa-#{@name}\"></i>"
+      end
     end
   end
 end

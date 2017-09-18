@@ -8,3 +8,7 @@
 [interact.js]: http://interactjs.io/
 [Node.js]: https://nodejs.org/
 [socket.io]: https://socket.io/
+[Paper]: https://bootswatch.com/paper/
+[InMotion Hosting]: http://www.inmotionhosting.com/
+[Font Awesome]: http://fontawesome.io/icons/
+[Glyphicons]: http://glyphicons.com/

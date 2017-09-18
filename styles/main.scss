@@ -20,7 +20,7 @@
 }
 
 .item-desc {
-	margin: 32px 0;
+	margin: 32px 0 16px 0;
 	font-size: 16px;
 }
 
@@ -43,4 +43,27 @@
 
 .item-image img.box-shadow {
 	@include boxShadow(5px, 5px, 10px);
+}
+
+.social-icons .fa {
+	font-size: 32px;
+	color: black;
+	padding: 4px;
+}
+
+.social-icons .fa:not(:last-child) {
+	margin-right: 8px;
+}
+
+.social-icons > a:hover .fa {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.item-panel {
+	margin-top: 32px;
+}
+
+footer {
+	padding-bottom: 8px;
+	font-size: 12px;
 }
