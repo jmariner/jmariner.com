@@ -384,51 +384,26 @@
 			}
 		},
 		{
-			"file": "styles/main.scss",
+			"file": "_layouts/bare.html",
 			"settings":
 			{
-				"buffer_size": 788,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 275,
+				"buffer_size": 1417,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_includes/footer.md",
+			"file": "_plugins/resource-timestamp.rb",
 			"settings":
 			{
-				"buffer_size": 519,
-				"line_ending": "Windows",
-				"name": "This is a test"
-			}
-		},
-		{
-			"file": "_includes/footer.html",
-			"settings":
-			{
-				"buffer_size": 786,
+				"buffer_size": 289,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_plugins/font-awesome.rb",
+			"file": "styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 440,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/script.js",
-			"settings":
-			{
-				"buffer_size": 122,
+				"buffer_size": 858,
 				"line_ending": "Windows"
 			}
 		}
@@ -537,6 +512,13 @@
 	],
 	"file_history":
 	[
+		"/E/Documents/2 Projects/jmariner.com/js/script.js",
+		"/E/Documents/2 Projects/jmariner.com/_includes/footer.html",
+		"/E/Documents/2 Projects/jmariner.com/styles/bootstrap-extras.css",
+		"/E/Documents/2 Projects/jmariner.com/_includes/footer.md",
+		"/E/Documents/2 Projects/jmariner.com/_config.yml",
+		"/E/Documents/2 Projects/jmariner.com/_plugins/font-awesome.rb",
+		"/E/Documents/1 School/CIS213 JavaScript/Case Study/v2/_includes/footer.html",
 		"/E/Documents/2 Projects/jmariner.com/_data/items.yaml",
 		"/E/Documents/2 Projects/jmariner.com/_plugins/markdownify-footer.rb",
 		"/E/Documents/2 Projects/topple_chess/index.html",
@@ -544,13 +526,10 @@
 		"/E/Documents/2 Projects/jmariner.com/.gitignore",
 		"/E/Documents/2 Projects/jmariner.com/_scss/_utils.scss",
 		"/E/Documents/2 Projects/jmariner.com/_prod.yml",
-		"/E/Documents/2 Projects/jmariner.com/_config.yml",
 		"/E/Documents/2 Projects/jmariner.com/Gemfile.old",
-		"/E/Documents/2 Projects/jmariner.com/_plugins/font-awesome.rb",
 		"/E/Documents/2 Projects/jmariner.com/js/bootswatchlet.js",
 		"/E/Documents/2 Projects/jmariner.com/404.html",
 		"/E/Documents/2 Projects/jmariner.com/_layouts/bare.html",
-		"/E/Documents/2 Projects/jmariner.com/js/script.js",
 		"/E/Documents/2 Projects/jmariner.com/_site/styles/main.css",
 		"/E/Documents/2 Projects/jmariner.com/styles/main.scss",
 		"/E/Documents/2 Projects/jmariner.com/css/main.css",
@@ -660,11 +639,7 @@
 		"/C/Users/justi/Documents/Projects/code-golf/submitted/gravity-sort/japt-explanation v2.txt",
 		"/C/Users/justi/Documents/Projects/code-golf/submitted/gravity-sort/japt-explanation.txt",
 		"/C/Users/justi/Documents/Projects/code-golf/gravity-sort/japt-explanation.txt",
-		"/C/Users/justi/Documents/Projects/code-golf/gravity-sort/tests.js",
-		"/C/Users/justi/Documents/Projects/code-golf/is-it-up/run.js",
-		"/C/Users/justi/Documents/Projects/code-golf/submitted/wardialing/script.js",
-		"/C/Users/justi/AppData/Roaming/BetterDiscord/themes/ClearVision_Ruby.theme.css",
-		"/C/Users/justi/AppData/Roaming/BetterDiscord/themes/ClearVision_Amethyst.theme.css"
+		"/C/Users/justi/Documents/Projects/code-golf/gravity-sort/tests.js"
 	],
 	"find":
 	{
@@ -981,7 +956,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1010,140 +985,53 @@
 						"translation.y": 165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "styles/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 788,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								560,
-								560
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 589.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "_config.yml",
+					"buffer": 1,
+					"file": "_layouts/bare.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 275,
+						"buffer_size": 1417,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								248
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_includes/footer.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 519,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"auto_name": "This is a test",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_includes/footer.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 786,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								64,
-								64
+								929,
+								929
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "_plugins/font-awesome.rb",
+					"buffer": 2,
+					"file": "_plugins/resource-timestamp.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 440,
+						"buffer_size": 289,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								275,
-								275
+								136,
+								136
 							]
 						],
 						"settings":
@@ -1156,35 +1044,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "js/script.js",
+					"buffer": 3,
+					"file": "styles/main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 122,
+						"buffer_size": 858,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								102
+								270,
+								270
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 293.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

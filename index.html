@@ -54,7 +54,15 @@ location: home
 							{% fa github %}
 						</a>
 						<a class="btn btn-success" href="{{ item.link }}" role="button">
-							Check it out&nbsp;
+							{% case item.type %}
+								{% when "game" %}
+									Download
+								{% when "web-game" %}
+									Play
+								{% when "website" %}
+									Check it out
+							{% endcase %}
+							&nbsp;
 							{% fa play %}
 						</a>
 					</div>
